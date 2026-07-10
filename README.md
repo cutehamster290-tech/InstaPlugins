@@ -22,6 +22,13 @@ Now, as i said, my plugin saves data automatically, **but how to acess it**? whe
   2) `root:Config(Folder:Folder)` is a function that returns the Components Folder and the Name of the Folder, but at the same time saves the Main Folder and the Components Folder and the Main Folder Name in root, you can acess them using `root.MainFolder root.Components root.Name`
   3) `root:Get(Name:string, place:'Components'|'MainFolder'|Instance?` returns the first Instance found with name Name and in place or by default in Components.
 
+# DataTypes
+when you call the `root:SaveData()` function you can give a table or '*true' or '*false', if you dont want any type of Data to be saved then just use '*false' or else '*true', but if instead you want only give true to some DataTypes and false to others, then you can pass a Dictionary where you can write these Data Names:
+- ConfigData: Doesn't save anymore these types of data: `root.Name root.MainFolder root.Components`, but they are still createable using `root.something` or `root['something']`.
+- ButtonData: Skips the ability to read the `Button.Toolbar` propriety, but you will still be able to read the Button's Id, Tooltip, IconImg, Description and Button.self.
+
+Remember: My plugin is open-source, so it means you can save/delete the data how you want, so you can even create root.Hello etc.
+
 # Future Updates
 - GUI managing: You will be soon able to create Guis and DockWidgets faster.
 - You will be able to insert data inside `root.Data[...]` using `root:AddData()` or by doing it manually using `root.Data`
