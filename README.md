@@ -14,7 +14,7 @@ Once you configured it, you can see that the folder you created for your Plugin 
 
 ## Data Saving
 my plugin dont lose important data, when you create a Toolbar or you create a pluginButton your data will be saved, a feature that can be lost if not stored in variables, my plugin does it automatically, and if you want your plugin to be fast you can use the root:SaveData(false) which will not store unnecessary data, or the data you specify, by the way, :SaveData lets you can toggle save/not save data or specified data if you provide another agument followed after the boolean.
-Now, as i said, my plugin saves data automatically, **but how to acess it**? when you create a Button for your Toolbar, you can acess the data of it, a feature that the plugin keyword dont provide, after you created the Button using root:CreateButton you provide the Id, Tooltip, IconImg, Description and Toolbar.
+Now, as i said, my plugin saves data automatically, **but how to acess it**? when you create a Button for your Toolbar, you can acess the data of it, a feature that the plugin keyword dont provide, after you created the Button using root:CreateButton you can acess from it the Button's Id, Tooltip, IconImg, Description, Toolbar and even the Button itself using Button.self.
 
 ## Useful Commands
   1) the `root:Init({Component: pluginButtonData, ModuleScript: ModuleScript, Data: {}?, elaborateData: boolean?})` lets you can Initialize a module script, you need pass a Component and a ModuleScript to this function, and if you want, Data and elaborateData, and the Main script will call the function you returned from that Module Script passing the data (Data and elaborateData) as Arguments.
