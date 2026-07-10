@@ -25,3 +25,4 @@ Now, as i said, my plugin saves data automatically, **but how to acess it**? whe
 # Future Updates
 - `root:SaveData(value:boolean)` will soon have the ability to toogle save/not save data of specified fields of Data, by inserting as second argument a Dictionary, this will help you manage the data faster and make the plugin more Efficient.
 - GUI managing: You will be soon able to create Guis and DockWidgets faster.
+- You will be able to insert data inside `root.Data[...]` using `root:AddData()` or by doing it manually using `root.Data`
