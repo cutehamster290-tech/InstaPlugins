@@ -2,7 +2,7 @@
 A new Roblox Framework.
 
 # What is InstaPlugins
-InstaPlugins is a Luau Plugin that makes Scalable and Efficient the creation of Plugins, it is inspired from ReactJs. It is easy to import, config and init.
+InstaPlugins is a Luau Plugin that makes Scalable and Efficient the creation of Plugins, it is inspired from ReactJs. It is easy to Import, Config and Init.
 
 # Usage:
 
