@@ -18,4 +18,4 @@ Now, as i said, my plugin saves data automatically, **but how to acess it**? whe
 
 ## useful Commands
 the root:Init lets you can Initialize a module script, you need pass a Component and a ModuleScript to this function, and if you want, Data and elaborateData, and the Main script will call the function you returned from that Module Script passing the data (Data and elaborateData) as Arguments.
-**elaborateData**: Converts a Dictionary to a Table, you can see that when you import the Main Folder, there is a ModuleScript (Component) inside Components where you see that i am getting Data[1] and not Data['Text'] which is what i sent from the Plugin Script (this might be dangerous sometimes).
+**elaborateData**: Converts a Dictionary to a Table, you can see that when you import the Main Folder, there is a ModuleScript (Component) inside Components where you see that i am getting Data[1] and not Data['Text'] which is what i sent from the Plugin Script, **this might be dangerous if not handled correctly**.
