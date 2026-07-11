@@ -29,6 +29,9 @@ when you call the `root:SaveData()` function you can give a table or '*true' or 
 
 Remember: My plugin is open-source, so it means you can save/delete the data how you want, so you can even create root.Hello etc.
 
+# Gui Managing
+you can see when you open the Script that there is a Do-End with inside some code, it is managing the open-close frame visibility, but before it, there is a new function: root:CreateGui() which deletes all copies of that gui in CoreGui and asks for a gui and creates a copy of that gui in the Coregui; You can also see that we aren't using a normal root:Get() but a special type of it, where it asks for a new type: Children, Children is a type where you insert a Parent and the Children you want to search for, and root:Get() will return the Children found in that Parent.
+
 # Future Updates
 - GUI managing: You will be soon able to create DockWidgets faster.
 - You will be able to insert data inside `root.Data[...]` using `root:AddData()` or by doing it manually using `root.Data`
