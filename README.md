@@ -32,6 +32,14 @@ Remember: My plugin is open-source, so it means you can save/delete the data how
 # Gui Managing
 you can see when you open the Script that there is a Do-End with inside some code, it is managing the open-close frame visibility, but before it, there is a new function: root:CreateGui() which deletes all copies of that gui in CoreGui and asks for a gui and creates a copy of that gui in the Coregui; You can also see that we aren't using a normal root:Get() but a special type of it, where it asks for a new type: Children, Children is a type where you insert a Parent and the Children you want to search for, and root:Get() will return the Children found in that Parent.
 
+# Special Commands
+As i already said before, you will Unlock some Shortcuts when you Install the Plugin, here is what they do:
+- !setup: use it in ModuleScripts in Components, to create Components Faster!
+- !CreateGui: Generates the basic structure of a Gui, but remember to have a ScreenGui and also to have a Button that calls togglePluginGui!
+- !CreateDock: Creates a Dock which will show only if you call the togglePluginGui function when a button is clicked or just use `Dock.Enabled = true`
+
+Remember to have 1 togglePluginGui function, if you want use the Dock and the Gui at the same time then name them differently, like toggleDock and toggleGui!
+
 # Future Updates
 - GUI managing: You will be soon able to create DockWidgets faster.
 - You will be able to insert data inside `root.Data[...]` using `root:AddData()` or by doing it manually using `root.Data`
