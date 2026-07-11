@@ -30,5 +30,5 @@ when you call the `root:SaveData()` function you can give a table or '*true' or 
 Remember: My plugin is open-source, so it means you can save/delete the data how you want, so you can even create root.Hello etc.
 
 # Future Updates
-- GUI managing: You will be soon able to create Guis and DockWidgets faster.
+- GUI managing: You will be soon able to create DockWidgets faster.
 - You will be able to insert data inside `root.Data[...]` using `root:AddData()` or by doing it manually using `root.Data`
