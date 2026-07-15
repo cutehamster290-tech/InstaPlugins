@@ -36,7 +36,7 @@ when you call the `root:SaveData()` function you can give a table or '*true' or 
 Remember: My plugin is open-source, so it means you can save/delete the data how you want, so you can even create root.Hello etc.
 
 # Gui Managing
-you can see when you open the Script that there is a Do-End with inside some code, it is managing the open-close frame visibility, but before it, there is a new function: root:CreateGui() which deletes all copies of that gui in CoreGui and asks for a gui and creates a copy of that gui in the Coregui; You can also see that we aren't using a normal root:Get() but a special type of it, where it asks for a new type: Children, Children is a type where you insert a Parent and the Children you want to search for, and root:Get() will return the Children found in that Parent.
+you can see when you open the Script that there is a Do-End with inside some code, it is managing the open-close frame visibility, but before it, there is a new function: root:CreateGui() which deletes all copies of that gui in CoreGui and creates a copy of that gui in the Coregui; You can also see that we aren't using a normal root:Get() but a special type of it: Children, Children is a type where you insert a Parent and the Children you want to search for, and root:Get() will return the Children found in that Parent.
 
 # Special Commands
 As i already said before, you will Unlock some Shortcuts when you Install the Plugin, here is what they do:
@@ -47,7 +47,7 @@ As i already said before, you will Unlock some Shortcuts when you Install the Pl
 Remember to have 1 togglePluginGui function, if you want use the Dock and the Gui at the same time then name them differently, like toggleDock and toggleGui!
 
 # Important Notes
-My plugin is not going to be useful with DockWidgets, with this, i am saying that there wont be many function helping with DockWidgets, so you will have to 
+- My plugin is not going to be useful with DockWidgets, with this, i am saying that there wont be many function helping with DockWidgets, so you will have to create your own Functions or ways to handle them using the features i already gave, but dont worry, i will also create some useful functions for DockWidgets too.
 
 # Future Updates
 - GUI managing: You will be soon able to create DockWidgets faster.
