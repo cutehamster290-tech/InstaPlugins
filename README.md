@@ -52,3 +52,5 @@ Remember to have 1 togglePluginGui function, if you want use the Dock and the Gu
 # Future Updates
 - GUI managing: You will be soon able to create DockWidgets faster.
 - You will be able to insert data inside `root.Data[...]` using `root:AddData()` or by doing it manually using `root.Data`
+
+# What are you waiting for? Install now InstaPlugins: https://create.roblox.com/store/asset/103849406141672/InstaPlugins
