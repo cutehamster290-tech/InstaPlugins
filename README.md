@@ -5,7 +5,7 @@ A new Roblox Framework.
 InstaPlugins is a Luau Plugin that makes Scalable and Efficient the creation of Plugins, it is inspired from ReactJs. It is easy to Import, Configure and Initialize.
 InstaPlugins helps you make Plugins Fast:
 - Shortcuts: !setup, !CreateDock/Gui are Snippets.
-- Everything is in the Plugin Script (the Central Script), so you can have a Working Gui close-open syststem with few lines of code!
+- Everything is in the Plugin Script (the Central Script), so you can have a Working Gui close-open system with few lines of code!
 - root:SaveData('*true') saves everything for you, such as ConfigData and ButtonData.
 - Using root:CreateButton() instead of plugin:CreateButton() you can access the Button's Id, IconImg, etc...
 - The Structure is easy to learn
