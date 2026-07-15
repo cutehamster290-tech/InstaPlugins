@@ -24,8 +24,7 @@ my plugin dont lose important data, when you create a Toolbar or you create a pl
 Now, as i said, my plugin saves data automatically, **but how to acess it**? when you create a Button for your Toolbar, you can acess the data of it, a feature that the plugin keyword dont provide, after you created the Button using root:CreateButton you can acess from it the Button's Id, Tooltip, IconImg, Description, Toolbar and even the Button itself using Button.self.
 
 ## Useful Commands
-  1) the `root:Init({Component: pluginButtonData, ModuleScript: ModuleScript, Data: {}?, elaborateData: boolean?})` lets you can Initialize a module script, you need pass a Component and a ModuleScript to this function, and if you want, Data and elaborateData, and the Main script will call the function you returned from that Module Script passing the data (Data and elaborateData) as Arguments.
-**elaborateData**: Converts a Dictionary to a Table, you can see that when you import the Main Folder, there is a ModuleScript (Component) inside Components where you see that i am getting Data[1] and not Data['OnClick'] which is what i sent from the Plugin Script, **this might be dangerous if not handled correctly**.
+  1) the `root:Init(ModuleScript:string|ModuleScript, Component:pluginButtonData|Instance, data:{}?)` function calls the ModuleScript sending the Component and the data, you can write the modulescript name like 'Button' instead of doing Components:FindFirstChild('Button') and if you are sending a pluginButtonData as Component, just send that instead of pluginButtonData.self!
   2) `root:Config(Folder:Folder)` is a function that returns the Components Folder and the Name of the Folder, but at the same time saves the Main Folder and the Components Folder and the Main Folder Name in root, you can acess them using `root.MainFolder root.Components root.Name`
   3) `root:Get(Name:string, place:'Components'|'MainFolder'|Instance?` returns the first Instance found with name Name and in place or by default in Components.
 
@@ -46,6 +45,9 @@ As i already said before, you will Unlock some Shortcuts when you Install the Pl
 - !CreateDock: Creates a Dock which will show only if you call the togglePluginGui function when a button is clicked or just use `Dock.Enabled = true`
 
 Remember to have 1 togglePluginGui function, if you want use the Dock and the Gui at the same time then name them differently, like toggleDock and toggleGui!
+
+# Important Notes
+My plugin is not going to be useful with DockWidgets, with this, i am saying that there wont be many function helping with DockWidgets, so you will have to 
 
 # Future Updates
 - GUI managing: You will be soon able to create DockWidgets faster.
