@@ -6,7 +6,7 @@ InstaPlugins is a Luau Plugin that makes Scalable and Efficient the creation of 
 Features (more details below):
 - Shortcuts: !setup, !CreateDock/Gui are Snippets.
 - Everything is in the Plugin Script (the Central Script), so you can have a Working Gui close-open system with few lines of code!
-- root:SaveData('*true') saves everything for you, such as ConfigData and ButtonData.
+- root:SaveData('*true') saves some Data for you Automatically, such as ConfigData and ButtonData.
 - Using root:CreateButton() instead of plugin:CreateButton() you can access the Button's Id, IconImg, etc...
 - The Structure is easy to learn
 - New Types that helps you manage Data faster
